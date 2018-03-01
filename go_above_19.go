@@ -5,8 +5,8 @@ package test
 import (
 	"github.com/modern-go/reflect2"
 	"runtime"
-	"testing"
 	"sync"
+	"testing"
 )
 
 var helpersField reflect2.StructField

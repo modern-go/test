@@ -1,8 +1,8 @@
 package must
 
 import (
-	"github.com/stretchr/testify/assert"
 	"github.com/modern-go/test"
+	"github.com/stretchr/testify/assert"
 	"runtime"
 )
 

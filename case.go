@@ -1,10 +1,10 @@
 package test
 
 import (
-	"testing"
 	"context"
 	"github.com/modern-go/gls"
 	"reflect"
+	"testing"
 )
 
 var testingTType = reflect.TypeOf((*testing.T)(nil))

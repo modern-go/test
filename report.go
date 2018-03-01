@@ -1,8 +1,8 @@
 package test
 
 import (
-	"io/ioutil"
 	"bytes"
+	"io/ioutil"
 )
 
 var newLine = []byte("\n")
@@ -20,7 +20,7 @@ func ExtractFailedLines(file string, line int) string {
 	}
 	report := checkFailed
 	openBraces := 0
-	for ;line < len(lines);line++ {
+	for ; line < len(lines); line++ {
 		report = append(report, bytes.TrimSpace(lines[line])...)
 		openBraces += bytes.Count(lines[line], []byte{'('})
 		openBraces -= bytes.Count(lines[line], []byte{')'})

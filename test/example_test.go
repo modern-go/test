@@ -1,10 +1,10 @@
 package test
 
 import (
-	"testing"
+	"context"
 	. "github.com/modern-go/test"
 	. "github.com/modern-go/test/must"
-	"context"
+	"testing"
 )
 
 func Test(t *testing.T) {

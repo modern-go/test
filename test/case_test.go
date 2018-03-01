@@ -1,13 +1,13 @@
 package test
 
 import (
-	"testing"
-	"github.com/modern-go/test"
-	"github.com/modern-go/test/should"
-	"github.com/modern-go/test/must"
-	"os"
-	"errors"
 	"context"
+	"errors"
+	"github.com/modern-go/test"
+	"github.com/modern-go/test/must"
+	"github.com/modern-go/test/should"
+	"os"
+	"testing"
 )
 
 func Test_case(t *testing.T) {

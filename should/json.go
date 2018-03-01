@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"github.com/modern-go/test"
 	"github.com/modern-go/test/testify/assert"
-	"runtime"
 	"reflect"
+	"runtime"
 )
 
 func JsonEqual(expected string, actual interface{}) {

@@ -1,10 +1,10 @@
 package should
 
 import (
-	"reflect"
 	"github.com/modern-go/test"
-	"runtime"
 	"github.com/modern-go/test/testify/assert"
+	"reflect"
+	"runtime"
 )
 
 type ReturnValue []interface{}
