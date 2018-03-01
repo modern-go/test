@@ -34,7 +34,7 @@ func Skipf(format string, args ...interface{}) {
 func CurrentT() *testing.T {
 	t, found := gls.Get(testingTType).(*testing.T)
 	if !found {
-		panic("test not started with check.Case()")
+		panic("test not started with test.Case()")
 	}
 	return t
 }
