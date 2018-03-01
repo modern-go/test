@@ -26,8 +26,10 @@ func JsonEqual(expected string, actual interface{}) {
 		actualJson = actualVal
 	default:
 		actualJson, err = json.Marshal(actual)
-		t.Fatal("actual can not marshal to json: " + err.Error())
-		return
+		if err != nil {
+			t.Fatal("actual can not marshal to json: " + err.Error())
+			return
+		}
 	}
 	var actualObj interface{}
 	err = json.Unmarshal(actualJson, &actualObj)

@@ -1,4 +1,4 @@
-package test
+package tests
 
 import (
 	"context"
@@ -57,5 +57,12 @@ func Test_case(t *testing.T) {
 	t.Run("successful call 2", test.Case(func(ctx context.Context) {
 		ret := should.Call(os.Stat, "/bin/bash")
 		should.Equal("bash", ret[0].(os.FileInfo).Name())
+	}))
+	t.Run("json equal", test.Case(func(ctx context.Context) {
+		must.JsonEqual(`{"a":{"b":"c"}}`, map[string]interface{}{
+			"a": map[string]interface{}{
+				"b": "c",
+			},
+		})
 	}))
 }
